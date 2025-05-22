@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Delhi YatraCab Booking</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-address border">
+            <div class="add-icon">
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-solid fa-square-envelope"></i>
+                <i class="fa-brands fa-google-plus"></i>
+                <i class="fa-brands fa-square-youtube"></i>
+                <p class="add-second">Booking@delhiyatracab.com</p>
+            </div>
+            </div>
+
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#CharDham">Char Dham</a></li>
+            <li><a href="#TourPackage">Tour Package</a></li>
+            <li><a href="#One-Way">One-way</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        
+       </ul>
+    </div>
+    <div class="panel">
+      <div class="panel-all">
+        <i class="fa-solid fa-car"></i>
+          Delhi Yatra Cab
+      </div>
+      <div class="panel-ops">
+          <p>Approved by government of india </p>
+          <p>delhiyatracab</p>
+          <p>No 1 Cab Company in india</p>
+          <p>+91-78-3830-8693,87-0066-8205,98-7027-6123</p>
+        
+      </div>
+      
+  </div></header>
+  <div class="hero-section">
+      <p>You are here: Home Price List</p>
+    
+</div>
+<div class="panel">
+  <div class="panel-all">
+    <div class="add-icon">
+      <i class="fa-solid fa-location-dot"></i>
+      Pickup Location
+      <i class="fa-solid fa-location-dot"></i>
+      Drop Location
+      <i class="fa-solid fa-bag-shopping"></i>
+      Departure
+     <i class="fa-solid fa-bag-shopping"></i>
+      Return
+  </div>
+    </div>
+  </div>
+  <h2 style="text-align: center;">Book Your Ride with Delhi YatraCab</h2>
+<form id="bookingForm">
+    <label for="tripType">Trip Type:</label>
+    <select id="tripType" name="tripType" required>
+      <option value="">--Select Trip Type--</option>
+      <option value="Outstation-RoundTrip">Outstation - Round Trip</option>
+      <option value="Outstation-Oneway">Outstation - One Way</option>
+      <option value="Local-FullDay">Local - Full Day</option>
+    </select>
+
+    <label for="fromCity">From:</label>
+    <select id="fromCity" name="fromCity" required>
+      <option value="">--Select City--</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Noida">Noida</option>
+      <option value="Faridabad">Faridabad</option>
+      <option value="Gurgaon">Gurgaon</option>
+    </select>
+
+    <label for="toCity">To:</label>
+    <input type="text" id="toCity" name="toCity" placeholder="Destination City" required>
+
+    <label for="carType">Car Type:</label>
+    <select id="carType" name="carType" required>
+      <option value="">--Select Car Type--</option>
+      <option value="Etios">Etios (4 Seater)</option>
+      <option value="Innova">Innova (6+1 Seater)</option>
+      <option value="Innova Crysta">Innova Crysta (7+1 Seater)</option>
+    </select>
+
+    <label for="travelDate">Travel Date:</label>
+    <input type="date" id="travelDate" name="travelDate" required>
+
+    <button type="submit">Submit Booking</button>
+  </form>
+
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Collect form data
+      const formData = {
+        tripType: document.getElementById('tripType').value,
+        fromCity: document.getElementById('fromCity').value,
+        toCity: document.getElementById('toCity').value,
+        carType: document.getElementById('carType').value,
+        travelDate: document.getElementById('travelDate').value
+      };
+      // For demonstration, we'll just log the data
+      console.log('Booking Details:', formData);
+      alert('Your booking request has been submitted!');
+      // Here, you can add code to send this data to your backend or an API endpoint
+    });
+  </script>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>Popular Places From Delhi</h4>
+      <ul>
+        <li><a href="#">Delhi to Agra Taxi</a></li>
+        <li><a href="#">Delhi to Haridwar Taxi</a></li>
+        <li><a href="#">Delhi to Nainital Taxi</a></li>
+        <li><a href="#">Delhi to Mussoorie Taxi</a></li>
+        <li><a href="#">Delhi to Rishikesh Taxi</a></li>
+        <li><a href="#">Delhi to Jaipur Taxi</a></li>
+        <li><a href="#">Delhi to Chandigarh Taxi</a></li>
+        <li><a href="#">Delhi to Manali Taxi</a></li>
+        <li><a href="#">Delhi to Ajmer Taxi</a></li>
+        <li><a href="#">Delhi to Shimla Taxi</a></li>
+        <li><a href="#">Delhi to Ambala Taxi</a></li>
+        <li><a href="#">Delhi to Dehradun Taxi</a></li>
+        <li><a href="#">Delhi to Patiala Taxi</a></li>
+        <li><a href="#">Delhi to Amritsar Taxi</a></li>
+        <li><a href="#">Delhi to Mcleodganj Taxi</a></li>
+        <li><a href="#">Delhi to Lansdowne Taxi</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>From Gurgaon</h4>
+      <ul>
+        <li><a href="#">Gurgaon to Agra Taxi</a></li>
+        <li><a href="#">Gurgaon to Haridwar Taxi</a></li>
+        <li><a href="#">Gurgaon to Nainital Taxi</a></li>
+        <li><a href="#">Gurgaon to Mussoorie Taxi</a></li>
+        <li><a href="#">Gurgaon to Rishikesh Taxi</a></li>
+        <li><a href="#">Gurgaon to Jaipur Taxi</a></li>
+        <li><a href="#">Gurgaon to Chandigarh Taxi</a></li>
+        <li><a href="#">Gurgaon to Manali Taxi</a></li>
+        <li><a href="#">Gurgaon to Ajmer Taxi</a></li>
+        <li><a href="#">Gurgaon to Shimla Taxi</a></li>
+        <li><a href="#">Gurgaon to Ambala Taxi</a></li>
+        <li><a href="#">Gurgaon to Dehradun Taxi</a></li>
+        <li><a href="#">Gurgaon to Patiala Taxi</a></li>
+        <li><a href="#">Gurgaon to Amritsar Taxi</a></li>
+        <li><a href="#">Gurgaon to Mcleodganj Taxi</a></li>
+        <li><a href="#">Gurgaon to Lansdowne Taxi</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>From Noida</h4>
+      <ul>
+        <li><a href="#">Noida to Agra Taxi</a></li>
+        <li><a href="#">Noida to Haridwar Taxi</a></li>
+        <li><a href="#">Noida to Nainital Taxi</a></li>
+        <li><a href="#">Noida to Mussoorie Taxi</a></li>
+        <li><a href="#">Noida to Rishikesh Taxi</a></li>
+        <li><a href="#">Noida to Jaipur Taxi</a></li>
+        <li><a href="#">Noida to Chandigarh Taxi</a></li>
+        <li><a href="#">Noida to Manali Taxi</a></li>
+        <li><a href="#">Noida to Ajmer Taxi</a></li>
+        <li><a href="#">Noida to Shimla Taxi</a></li>
+        <li><a href="#">Noida to Ambala Taxi</a></li>
+        <li><a href="#">Noida to Dehradun Taxi</a></li>
+        <li><a href="#">Noida to Patiala Taxi</a></li>
+        <li><a href="#">Noida to Amritsar Taxi</a></li>
+        <li><a href="#">Noida to Mcleodganj Taxi</a></li>
+        <li><a href="#">Noida to Lansdowne Taxi</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Innova Hire in Delhi</a></li>
+        <li><a href="#">Delhi to Outstation Taxi</a></li>
+        <li><a href="#">Book Taxi in Delhi</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">One-Way</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright ©2016 Delhiyatracab.com All rights reserved. | Designed By : Shristi Technology</p>
+  </div>
+</footer>
+
+</body>
+</html>
